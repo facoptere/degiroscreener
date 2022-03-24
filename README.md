@@ -8,9 +8,8 @@ The computation may be long, please be patient.
 
 
 
-The first block downloads and put in cache the data from DEGIRO and eventually Yahoo! finance, then build the raw dataframe of all stocks.
+- The first block downloads and put in cache the data from DEGIRO and eventually Yahoo! finance, then build the raw dataframe of all stocks.
+- The second block perform the ranking in order to establish the hall of fame based on a secret sauce.
+- The last block filters out and displays the final result. Please read the "readme.rtf" to get the meaning of the columns.
 
-The second block perform the ranking in order to establish the hall of fame based on a secret sauce.
-
-The last block filters out and displays the final result. Please read the "readme.rtf" to get the meaning of the columns.
-
+Downloaded data stay forever to avoid to much load on DEGIRO. You have to remove the cache manually ( rm .cachedb* )  to get fresh data.
