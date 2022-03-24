@@ -12,4 +12,4 @@ Please export the environment variables GT_DG_USERNAME and GT_DG_PASSWORD as you
 - The last block filters out and displays the final result. __Please read the "readme.rtf" to get the meaning of the columns.__
 
 ## Cache maintenance
-Downloaded data stay forever to avoid to much load on DEGIRO. You have to remove the cache manually ( rm .cachedb* )  to get fresh data.
+Downloaded data stay forever to avoid to much load on DEGIRO. You have to remove the cache manually ( rm .cachedb* ) and launch the different blocks to get some fresh data.
