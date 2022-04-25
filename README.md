@@ -11,9 +11,9 @@ Please export the environment variables GT_DG_USERNAME and GT_DG_PASSWORD as you
 - The second block performs the ranking in order to establish the hall of fame based on complex formula. All your CPU cores will be used during the computation, it may be long depending on your gear.
 - The third block filters out and displays the final result. __Please read the "readme.rtf" to get the meaning of the columns and how the ranking is done.__
 - The other blocks:
--   save the result to a CSV file and
--   overwrite a favourite list on DEGIRO account
--   display current portfolio merged with data from the computed result
+  -   save the result to a CSV file and
+  -   overwrite a favourite list on DEGIRO account
+  -   display current portfolio merged with data from the computed result
 
 ## Cache maintenance
 Downloaded data stay forever to avoid to much load on DEGIRO. You have to remove the cache manually ( rm .cachedb* ) and launch the different blocks to get some fresh data.
