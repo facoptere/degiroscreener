@@ -10,7 +10,10 @@ Please export the environment variables GT_DG_USERNAME and GT_DG_PASSWORD as you
 - The first block downloads and put in cache the data from DEGIRO and eventually Yahoo! finance, then build the raw dataframe of all stocks. You should get as little as 15000 stocks there!
 - The second block performs the ranking in order to establish the hall of fame based on complex formula. All your CPU cores will be used during the computation, it may be long depending on your gear.
 - The third block filters out and displays the final result. __Please read the "readme.rtf" to get the meaning of the columns and how the ranking is done.__
-- The last block saves the result to a CSV file and also overwrite a favourite list on DEGIRO account.
+- The other blocks:
+-   save the result to a CSV file and
+-   overwrite a favourite list on DEGIRO account
+-   display current portfolio merged with data from the computed result
 
 ## Cache maintenance
 Downloaded data stay forever to avoid to much load on DEGIRO. You have to remove the cache manually ( rm .cachedb* ) and launch the different blocks to get some fresh data.
