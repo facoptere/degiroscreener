@@ -2,6 +2,8 @@
 
 ## About
 Build a list of cherry picked stocks from the DEGIRO broker, based on the API https://github.com/Chavithra/degiro-connector
+Download portfolios from DEGIRO and also from BourseDirect (thanks to an adapted version of https://github.com/carldeg/BourseDirect)
+Merge the porfolios with stock data, and compute a synthesis per sector.
 
 
 ## "degiro_screener.ipynb" on Jupyter Lab
@@ -13,7 +15,8 @@ Please export the environment variables GT_DG_USERNAME and GT_DG_PASSWORD as you
 - The other blocks:
   -   save the result to a CSV file 
   -   overwrite a favourite list on your DEGIRO account from top 100 stocks of computed result
-  -   display your current portfolio merged with data from the computed result
+  -   display your current portfolio merged with data from the computed result. 
+  -   if GT_BD_USERNAME and GT_BD_PASSWORD (BourseDirect credentials) are defined, then download the porfolio from BourseDirect and merge the 2 portfolios.
 
 ## Cache maintenance
 Downloaded data stay forever to avoid to much load on DEGIRO. You have to remove the cache manually ( rm .cachedb* ) and launch the different blocks to get some fresh data.
